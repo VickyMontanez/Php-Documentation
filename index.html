@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./main.js" defer></script>
+    <script src="main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <!-- <button id="btn">Obtener</button> -->
+    
+    <!-- ENVIAR DATOS A PHP -->
+    <!--METODO ANTIGUO (NO SE HACE) -->
+    <!-- GET -->
+<!--     <form action="./api3.php" method="GET">
+        <input type="text" name="nombre">
+        <input type="text" name="apellido">
+        <input type="submit" value="enviar">
+    </form><br> -->
+
+    <!-- POST -->
+<!--     <form action="./api3.php" method="POST">
+        <input type="text" name="nombre">
+        <input type="text" name="apellido">
+        <input type="text" name="edad">
+        <input type="submit" value="enviar">
+    </form><br> -->
+
+    <!-- ENVIAR UN ARRAY-->
+<!--     <form action="./api3.php" method="POST">
+        <input type="text" name="nombre">
+        <input type="text" name="apellido">
+        <input type="text" name="edad"><br>
+        <input type="checkbox" name="pasatiempos[]" value="Programar"><label for="pasatiempos[]">Programar</label>
+        <input type="checkbox" name="pasatiempos[]" value="Ver series"><label for="pasatiempos[]">Ver series</label>
+        <input type="checkbox" name="pasatiempos[]" value="Escuchar Musica"><label for="pasatiempos[]">Escuchar Musica</label><br>
+        <input type="submit" value="enviar">
+    </form>
+ -->
+    <!-- ENVIAR ARCHIVOS O IMG -->
+<!--     <form action="./api3.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="archivo">
+        <input type="submit" value="enviar">
+    </form> -->
+
+    <!-- OBTENER CON JAVASCRIPT Y PASARLA A PHP -->
+    <form id="elForm">
+        <input type="text" name="nombre">
+        <input type="text" name="apellido">
+        <input type="text" name="edad"><br>
+        <input type="checkbox" name="pasatiempos[]" value="Programar"><label for="pasatiempos[]">Programar</label>
+        <input type="checkbox" name="pasatiempos[]" value="Ver series"><label for="pasatiempos[]">Ver series</label>
+        <input type="checkbox" name="pasatiempos[]" value="Escuchar Musica"><label for="pasatiempos[]">Escuchar Musica</label><br>
+        <input type="submit" value="enviar">
+    </form>
+    <pre></pre>
 </body>
 </html>
