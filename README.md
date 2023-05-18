@@ -1,6 +1,6 @@
 ~~~php
 ```<?php
- ["Host"]=>
+  ["Host"]=> 
   string(9) "localhost"
   ["Connection"]=>
   string(10) "keep-alive"
@@ -33,3 +33,8 @@
   ?>
 ```
 ~~~
+
+# Headers PHP
+
+1. Host: Especifica el nombre de dominio del servidor (para alojamiento virtual), y (opcionalmente) el número de puerto TCP en el que está escuchando el  servidor.
+2. Connection: Controla si la conexión a la red se mantiene activa después de que la transacción en curso haya finalizado (Keep-alive : Controla el tiempo durante el cual una conexión persistente debe permanecer abierta.)
