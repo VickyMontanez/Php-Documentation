@@ -1,11 +1,11 @@
-/* let buton = document.querySelector("#btn");
+let buton = document.querySelector("#btn");
 
-Consumir el json de PHP
+/* Consumir el json de PHP */
 buton.addEventListener("click", async (e)=>{
     console.log(await(await fetch("http://localhost/SpUkM01-075/php/api.php")).json());
 })
 
-POO PROGRAMACIÓN ORIENTADA A OBJETOS
+/* POO PROGRAMACIÓN ORIENTADA A OBJETOS */
 
 class Olla{
     lugares
@@ -24,7 +24,7 @@ class Olla{
 let obj = new Olla;
 
 obj.setLugares = "Floridablanca";
-console.log(obj.getLugares); */
+console.log(obj.getLugares);
 
 /* UTILIZAR JAVASCRIPT PARA ENVIAR DATA A PHP */
 let myForm = document.querySelector("#elForm");
@@ -35,4 +35,5 @@ myForm.addEventListener("submit", async(e)=>{
     let config = {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(data)}
     let res = await(await fetch("./api3.php", config)).text();
     document.querySelector("pre").innerHTML= res;
+    myForm.reset();
 })
