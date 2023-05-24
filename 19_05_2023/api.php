@@ -7,7 +7,7 @@ var_dump($_GET);
 var_dump($_POST);
 
 /*  ENVIAR ARCHIVOS */
-move_uploaded_file($_FILES["archivo"]["tmp_name"],"img/prueba1.jpg");
+move_uploaded_file($_FILES["archivo"]["tmp_name"],"./img/prueba1.jpg");
 
 
 /* ENVIAR A JAVASCRIPT */
