@@ -1,12 +1,12 @@
 <?php
 /* Pasar a pdf con el header */
 
-header("Content-type:application/pdf");
+/* header("Content-type:application/pdf");
 echo 'nombre: Vicky Montañez';
-
+ */
 
 /* Pasar a json con el header  */
-header("Content-type:application/json; charset:UTF-8");
+/* header("Content-type:application/json; charset:UTF-8"); */
 
 /* Definir una variable */
 $nombre = (string) "Vickysiiitaa";
