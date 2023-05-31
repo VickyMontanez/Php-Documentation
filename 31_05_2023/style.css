@@ -1,0 +1,12 @@
+form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    background-color: red; 
+
+}
+
+.input{
+    width: 250px;
+    height: 100px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" async>
+    <title>Calculator</title>
+</head>
+<body>
+    <?php
+        $n1 = $_POST["n1"];
+        $n2 = $_POST["n2"];
+        $op = $_POST["op"];
+        $result;
+
+        switch ($op) {
+            case $op === "+":
+                $result = $n1 + $n2;
+                break;
+            case $op === "-":
+                $result = $n1 - $n2;
+                break;
+            case $op === "*":
+                $result = $n1 * $n2;
+                break;
+            case $op === "/":
+                $result = $n1 / $n2;
+                break;
+            case $op === "%":
+                $result = $n1 % $n2;
+                break;
+            default:
+                throw new Exception("Error Processing Request", 1);
+                break;
+        }
+    ?>
+
+    <form method="post">
+    <h5><?php echo $result?></h5>
+        <input class="inputt" type="number" name="n1" id="n1" step="any" placeholder="Ingrese el número">
+        <input class="inputt" type="number" name="n2" id="n2" step="any" placeholder="Ingrese el número">
+        <div class="container-num">
+            <select name="op" id="op" multiple> 
+                <option value="+"><button>+</button></option>
+                <option value="-"><button>-</button></option>
+                <option value="*"><button>x</button></option>
+                <option value="/"><button>÷</button></option>
+                <option value="%"><button>%</button></option>
+            </select>
+            <input type="submit" value="=">
+        </div>
+    </form>
+</body>
+</html>
