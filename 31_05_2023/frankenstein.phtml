@@ -25,10 +25,18 @@
                 $result = $n1 * $n2;
                 break;
             case $op === "/":
-                $result = $n1 / $n2;
+                if($n2 != 0){
+                    $result = $n1 / $n2;
+                }else{
+                    $result = "ERROR";
+                }
                 break;
             case $op === "%":
-                $result = $n1 % $n2;
+                if($n2 != 0){
+                    $result = $n1 % $n2;
+                }else{
+                    $result = "ERROR";
+                }
                 break;
             default:
                 throw new Exception("Error Processing Request", 1);
