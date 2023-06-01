@@ -43,23 +43,27 @@
                 break;
         }
     ?>
+    <header>
+    </header>
+    <main>
+        <form method="post">
+            <div class="resultado">
+                <h3><?php echo "$n1 $op $n2 = $result";?></h3>
+            </div>
+            <input class="inputt" type="number" name="n1" id="n1" step="any" required placeholder="Ingrese el número">
+            <input class="inputt" type="number" name="n2" id="n2" step="any" required placeholder="Ingrese el número">
+            <div class="container-num">
+                <select name="op" id="op" multiple> 
+                    <option value="+"><button>+</button></option>
+                    <option value="-"><button>-</button></option>
+                    <option value="*"><button>x</button></option>
+                    <option value="/"><button>÷</button></option>
+                    <option value="%"><button>%</button></option>
+                </select>
+                <input class="enviar" type="submit" value="=">
+            </div>
+        </form>
+    </main>
 
-    <form method="post">
-        <div class="resultado">
-            <h3><?php echo "$n1 $op $n2 = $result";?></h3>
-        </div>
-        <input class="inputt" type="number" name="n1" id="n1" step="any" required placeholder="Ingrese el número">
-        <input class="inputt" type="number" name="n2" id="n2" step="any" required placeholder="Ingrese el número">
-        <div class="container-num">
-            <select name="op" id="op" multiple> 
-                <option value="+"><button>+</button></option>
-                <option value="-"><button>-</button></option>
-                <option value="*"><button>x</button></option>
-                <option value="/"><button>÷</button></option>
-                <option value="%"><button>%</button></option>
-            </select>
-            <input class="enviar" type="submit" value="=">
-        </div>
-    </form>
 </body>
 </html>
