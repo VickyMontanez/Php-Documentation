@@ -4,9 +4,25 @@
 
 ##### El propósito de este ejercicio es crear una calculadora facil de entender y usar con operadores básicos es decir +, - , * y /.
 
-![Screenshot from 2023-06-08 07-02-15](/home/spukM01-075/Pictures/Screenshots/Screenshot from 2023-06-08 07-02-15.png)
+![Screenshot from 2023-06-08 07-02-15](/var/www/html/SpUkM01-075/Php-Documentation/img/Screenshot from 2023-06-08 07-02-15.png)
 
-## DISEÑO
+
+
+## Instalación
+
+1. Clona el repositorio
+
+   ``git clone https://github.com/VickyMontanezCampus/Php-Documentation.git``
+
+2. Entra a la carpeta `31_05_2023`
+
+3. Entra al archivo `frankenstein.phtml`
+
+4. Ejecuta el archivo en un servidor web o usando XAMPP
+
+
+
+## Diseño
 
 EL diseño de la calculadora cuenta con:
 
