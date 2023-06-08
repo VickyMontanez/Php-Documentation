@@ -4,7 +4,7 @@
 
 ##### El propósito de este ejercicio es crear una calculadora facil de entender y usar con operadores básicos es decir +, - , * y /.
 
-![Screenshot from 2023-06-08 07-02-15](/var/www/html/SpUkM01-075/Php-Documentation/img/Screenshot from 2023-06-08 07-02-15.png)
+![](https://raw.githubusercontent.com/VickyMontanezCampus/Php-Documentation/master/img/Screenshot from 2023-06-08 07-02-15.png)
 
 
 
